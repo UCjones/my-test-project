@@ -36,3 +36,28 @@
     transform: rotate(360deg);
   }
 }
+
+.Container{
+  display: flex;
+ }
+ .Container > div {
+  border: 1px solid rgb(255, 0, 106);
+  padding: 10px;
+ }
+ .Column1, .Column2, .Column3 {
+  flex: 1;
+ }
+ .Column1 {
+  background-color: rgb(138, 207, 124);
+ }
+ .Column2 {
+  background-color: rgb(224, 125, 11);
+ }
+ .Column3 {
+  background-color: rgb(49, 3, 43);
+ }
+ @media (max-width: 768px){
+  .Container{
+  flex-direction: column;
+  }
+ }
